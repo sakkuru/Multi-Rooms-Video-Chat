@@ -2,7 +2,7 @@ navigator.mediaDevices.getUserMedia({ video: true })
     .then(stream => {
         $("video").attr("src", URL.createObjectURL(stream));
 
-        const peer = new Peer({ key: "ccb51f64-1913-4b6e-a1f2-5264bab87be1" });
+        const peer = new Peer({ key: "3197c5d7-0541-4131-92bb-75c8f45eefb4" });
 
         peer.on('open', () => {
             const sfuRoom = peer.joinRoom(roomName, { mode: 'sfu', stream: stream });
